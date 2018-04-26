@@ -25,7 +25,7 @@ SECRET_KEY = 'pk-02*ks%bla6c@0n5_!ow2+)s+em#gwkgr9@$8@c+&!vz)n6-'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['139.179.38.118']
 
 
 # Application definition
@@ -75,8 +75,12 @@ WSGI_APPLICATION = 'kumpir.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'cs353',
+        'USER': 'cs353',
+        'PASSWORD': 'cs353',
+        'HOST': '139.179.38.118',
+        'PORT': 22,
     }
 }
 
@@ -118,3 +122,4 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
