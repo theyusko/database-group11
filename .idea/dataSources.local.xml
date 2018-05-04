@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="Django default" uuid="45ea4c60-2f20-408a-8f1f-67655b8a673c">
+      <database-info product="MySQL" version="5.5.5-10.1.26-MariaDB-0+deb9u1" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.46 ( Revision: 9cc87a48e75c2d2e87c1a293b2862ce651cb256e )">
+        <extra-name-characters>#@</extra-name-characters>
+        <identifier-quote-string>`</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="exact" quoted-identifiers="exact" />
+      <user-name>cs353</user-name>
+      <introspection-schemas>*:cs353</introspection-schemas>
+    </data-source>
+    <data-source name="db" uuid="cd8d1719-3ec2-4748-9c09-754d96480874">
+      <database-info product="MySQL" version="5.5.5-10.1.26-MariaDB-0+deb9u1" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.46 ( Revision: 9cc87a48e75c2d2e87c1a293b2862ce651cb256e )">
+        <extra-name-characters>#@</extra-name-characters>
+        <identifier-quote-string>`</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="exact" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>cs353</user-name>
+      <introspection-schemas>*:cs353</introspection-schemas>
+    </data-source>
+  </component>
+</project>
