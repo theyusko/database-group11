@@ -1,6 +1,0 @@
-[client]
-database = cs353
-user = cs353
-password = cs353
-default-character-set = utf8
-host = 139.179.38.118
