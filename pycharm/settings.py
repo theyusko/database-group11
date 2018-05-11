@@ -84,6 +84,7 @@ DATABASES = {
         'HOST': '139.179.38.118',
         'OPTIONS': {
             'init_command': 'SET storage_engine=INNODB',
+            'sql_mode': 'STRICT_TRANS_TABLES',
         },
     }
 }
