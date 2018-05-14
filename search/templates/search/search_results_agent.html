@@ -1,0 +1,13 @@
+{% extends 'search/search_results.html' %}
+
+{% block content %}
+
+<h3 class="center-align red lighten-3">{{title}}</h3>
+
+<ul class="collection">
+    {% for agent in agents %}
+        <li class="collection-item"><a href="../../posts/id/{{agent.account_id}}">{{agent.name}} {{agent.surname}}</a></li>
+    {% endfor %}
+</ul>
+
+{% endblock %}

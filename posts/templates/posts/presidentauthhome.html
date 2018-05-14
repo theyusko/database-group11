@@ -1,0 +1,23 @@
+{% extends 'posts/layout.html' %}
+
+{% block content %}
+
+{% for pr in president %}
+
+<h3 class="center-align red lighten-3">{{pr.name}} {{pr.surname}}</h3>
+
+<ul class="collection">
+    <li class="collection-item">Account ID: {{pr.account_id}}</li>
+    <li class="collection-item">Password: {{pr.password}}</li>
+    <li class="collection-item">Name: {{pr.name}}</li>
+    <li class="collection-item">Surname: {{pr.surname}}</li>
+    <li class="collection-item">Nationality: {{pr.nationality}}</li>
+    <li class="collection-item">Age: {{pr.age}}</li>
+    <li class="collection-item">Start Date: {{pr.start_date}}</li>
+    <li class="collection-item">Team: {{pr.team_name}}</li>
+</ul>
+{% endfor %}
+<br>
+<a href="/" class="btn">Go Back</a>
+
+{% endblock %}

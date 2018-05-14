@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2000
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "djangotest", "djangotest.pyproj", "{99D33C85-59CE-4251-86F2-8FC155C28CB8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{99D33C85-59CE-4251-86F2-8FC155C28CB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99D33C85-59CE-4251-86F2-8FC155C28CB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99D33C85-59CE-4251-86F2-8FC155C28CB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99D33C85-59CE-4251-86F2-8FC155C28CB8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A16E2D72-1714-4931-BB73-42283F0A1AAA}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,25 @@
+{% extends 'posts/layout.html' %}
+
+{% block content %}
+
+{% for p in player %}
+
+<h3 class="center-align red lighten-3">{{p.name}} {{p.surname}}</h3>
+
+<ul class="collection">
+    <li class="collection-item">Name: {{p.name}}</li>
+    <li class="collection-item">Surname: {{p.surname}}</li>
+    <li class="collection-item">Nationality: {{p.nationality}}</li>
+    <li class="collection-item">Age: {{p.age}}</li>
+    <li class="collection-item">Kit No: {{p.kit_no}}</li>
+    <li class="collection-item">Preferred Foot: {{p.pref_foot}}</li>
+    <li class="collection-item">Previous Transfer Fee: {{p.prev_transfer_fee}}</li>
+    <li class="collection-item">Recovery Date: {{p.recovery_date }}</li>
+    <li class="collection-item">Suspend Date: {{p.suspend_date}}</li>
+    <li class="collection-item">Team: {{p.belong_to_team_name}}</li>
+</ul>
+{% endfor %}
+<br>
+<a href="/" class="btn">Go Back</a>
+
+{% endblock %}

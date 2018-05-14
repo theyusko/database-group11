@@ -1,0 +1,203 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <Name>djangotest</Name>
+    <RootNamespace>djangotest</RootNamespace>
+    <InterpreterId>MSBuild|env|$(MSBuildProjectFullPath)</InterpreterId>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>99d33c85-59ce-4251-86f2-8fc155c28cb8</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <ProjectTypeGuids>{5F0BE9CA-D677-4A4D-8806-6076C0FAAD37};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <StartupFile>manage.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <LaunchProvider>Django launcher</LaunchProvider>
+    <DjangoSettingsModule>djangotest.settings</DjangoSettingsModule>
+    <WebBrowserUrl>http://localhost</WebBrowserUrl>
+    <OutputPath>.</OutputPath>
+    <SuppressCollectPythonCloudServiceFiles>true</SuppressCollectPythonCloudServiceFiles>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="manage.py" />
+    <Compile Include="djangotest\__init__.py" />
+    <Compile Include="djangotest\settings.py" />
+    <Compile Include="djangotest\urls.py" />
+    <Compile Include="djangotest\wsgi.py" />
+    <Compile Include="posts\admin.py" />
+    <Compile Include="posts\apps.py" />
+    <Compile Include="posts\migrations\__init__.py" />
+    <Compile Include="posts\models.py" />
+    <Compile Include="posts\tests.py" />
+    <Compile Include="posts\urls.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="posts\views.py" />
+    <Compile Include="posts\__init__.py" />
+    <Compile Include="search\admin.py" />
+    <Compile Include="search\apps.py" />
+    <Compile Include="search\migrations\__init__.py" />
+    <Compile Include="search\models.py" />
+    <Compile Include="search\tests.py" />
+    <Compile Include="search\urls.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="search\views.py" />
+    <Compile Include="search\__init__.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="posts\templates\posts\agentauthhome.html">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="posts\templates\posts\agenthome.html">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="posts\templates\posts\coachauthhome.html">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="posts\templates\posts\coachhome.html">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="posts\templates\posts\details.html">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="posts\templates\posts\form_coach.html">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="posts\templates\posts\form_president.html">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="posts\templates\posts\index.html">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="posts\templates\posts\form.html">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="posts\templates\posts\form_agent.html">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="posts\templates\posts\form_player.html">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="posts\templates\posts\layout.html">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="posts\templates\posts\playerauthhome.html">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="posts\templates\posts\playerhome.html">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="posts\templates\posts\presidentauthhome.html">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="posts\templates\posts\presidenthome.html">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="requirements.txt" />
+    <Content Include="search\static\search\css\pikaday.css">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="search\static\search\css\RadioButtonStyle.css">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="search\static\search\css\RegisterPageStyle.css">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="search\static\search\images\RegisterPageBackgroundImage.jpg" />
+    <Content Include="search\static\search\js\pikaday.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="search\static\search\js\RegisterButtonAnimation.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="search\templates\search\search.html" />
+    <Content Include="search\templates\search\search_results.html">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="search\templates\search\search_results_agent.html">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="search\templates\search\search_results_player.html">
+      <SubType>Code</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="djangotest\" />
+    <Folder Include="posts\" />
+    <Folder Include="posts\migrations\" />
+    <Folder Include="posts\templates\" />
+    <Folder Include="posts\templates\posts\" />
+    <Folder Include="search\" />
+    <Folder Include="search\migrations\" />
+    <Folder Include="search\static\" />
+    <Folder Include="search\static\search\" />
+    <Folder Include="search\static\search\css\" />
+    <Folder Include="search\static\search\images\" />
+    <Folder Include="search\static\search\js\" />
+    <Folder Include="search\templates\" />
+    <Folder Include="search\templates\search\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Interpreter Include="env\">
+      <Id>env</Id>
+      <Version>3.6</Version>
+      <Description>env (Anaconda 5.1.0)</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>X64</Architecture>
+    </Interpreter>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Django.targets" />
+  <!-- Specify pre- and post-build commands in the BeforeBuild and 
+       AfterBuild targets below. -->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <AutoAssignPort>True</AutoAssignPort>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

@@ -1,0 +1,21 @@
+{% extends 'posts/layout.html' %}
+
+{% block content %}
+
+{% for co in coach %}
+
+<h3 class="center-align red lighten-3">{{co.name}} {{co.surname}}</h3>
+
+<ul class="collection">
+    <li class="collection-item">Name: {{co.name}}</li>
+    <li class="collection-item">Surname: {{co.surname}}</li>
+    <li class="collection-item">Nationality: {{co.nationality}}</li>
+    <li class="collection-item">Age: {{co.age}}</li>
+    <li class="collection-item">Start Date: {{co.start_date}}</li>
+    <li class="collection-item">Team: {{co.team_name}}</li>
+</ul>
+{% endfor %}
+<br>
+<a href="/" class="btn">Go Back</a>
+
+{% endblock %}

@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+	<title>Django Crash Course Posts Test</title>
+</head>
+<body>
+    <header class="container center-align">
+        <h1>Django Crash Course Posts Test</h1>
+    </header>
+
+    <div class="container center-align">
+        {% block content %}
+        {% endblock %}
+        <br>
+        <br>
+        <a style="display:block" class="center-align" href="/admin">Admin Login</a><br>
+        <a style="display:block" class="center-align" href="/register/form_player">Insert Player</a><br>
+        <a style="display:block" class="center-align" href="/register/form_agent">Insert Agent</a><br>
+        <a style="display:block" class="center-align" href="/register/form_coach">Insert Coach</a><br>
+        <a style="display:block" class="center-align" href="/register/form_president">Insert President</a><br>
+        <a style="display:block" class="center-align" href="/search">Execute Search Query</a><br>
+    </div>
+</body>
+</html>

@@ -1,0 +1,20 @@
+{% extends 'posts/layout.html' %}
+
+{% block content %}
+
+{% for ag in agent %}
+
+<h3 class="center-align red lighten-3">{{ag.name}} {{ag.surname}}</h3>
+
+<ul class="collection">
+    <li class="collection-item">Name: {{ag.name}}</li>
+    <li class="collection-item">Surname: {{ag.surname}}</li>
+    <li class="collection-item">Nationality: {{ag.nationality}}</li>
+    <li class="collection-item">age: {{ag.age}}</li>
+    <li class="collection-item">Player: {{ag.player_id}}</li>
+</ul>
+{% endfor %}
+<br>
+<a href="/" class="btn">Go Back</a>
+
+{% endblock %}
