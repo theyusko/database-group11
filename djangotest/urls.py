@@ -17,9 +17,20 @@ urlpatterns = [
     # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
 
     # Uncomment the next line to enable the admin:
-    url(r'^admin/', admin.site.urls),
-	url(r'^$', include('posts.urls')),
+    url(r'^$', include('mainPage.urls')),
+    url(r'^mainPage/', include('mainPage.urls')),
+
+    url(r'^login/', include('loginPage.urls')),
+
+    url(r'^search/', include('search.urls')),
+
+    url(r'^standingsPage/', include('standingsPage.urls')),
+
     url(r'^posts/', include('posts.urls')),
-	url(r'^register/', include('posts.urls')),
-	url(r'^search/', include('search.urls')),
+    url(r'^register/', include('posts.urls')),
+    url(r'^leagues/', include('posts.urls')),
+
+    url(r'^registerPage/', include('registerPage.urls')),
+
+    url(r'^admin/', admin.site.urls),
 ]

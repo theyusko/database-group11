@@ -1,0 +1,79 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+	<style>
+		a:link {
+			color: black;
+			text-decoration: none;
+		}
+
+		a:visited {
+			color: green;
+			text-decoration: none;
+		}
+
+		a:hover {
+			color: hotpink;
+			text-decoration: none;
+		}
+
+		a:active {
+			color: blue;
+			text-decoration: none;
+		}
+
+		body {
+			background-color:dimgray
+		}
+
+		div {
+			text-align: center;
+			color:black;
+		}
+
+		.col-lg {
+			font-size: 5em;
+		}
+
+		.x {
+			padding: 15px 0;
+			text-align: center;
+		}
+	</style>
+	<head>
+		<title>Main Page</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</head>
+    <body>
+		<h1 style="font-size: 3em; text-align: center;">Kumpir: A Football Database by cs353group11</h1>
+		<div class="container-fluid" style="position: fixed; width: 100%; height: 100%">
+		<div class="row" style="height: 100%;">
+            <div class="col-lg">
+				<a href="/login">Login</a>
+            </div>
+            <div class="col-lg">
+				<a href="register.html">Register</a>
+			</div>
+
+			<div class="col-lg">
+				<a href="/search">Search</a>
+			</div>
+			<div class="col-lg">
+				<a href="/standingsPage">Standings</a>
+			</div>
+
+			<div class="col-lg">
+				<a href="credits.html">Credits</a>
+			</div>
+		</div>
+		</div>
+    </body>
+</html>

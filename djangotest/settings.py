@@ -33,6 +33,10 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     # Add your apps here to enable them
+    "loginPage",
+    "mainPage",
+    "standingsPage",
+    "registerPage",
     "posts",
 	"search",
     'django.contrib.admin',

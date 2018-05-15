@@ -23,4 +23,8 @@ urlpatterns = [
 	url(r'^id/auth/coach(?P<id>\d+)$', views.coachauth, name = "coach"),
 	url(r'^form_coach', views.form_coach, name="form_coach"),
 	url(r'^coach_register', views.coach_register, name="coach_register"),
+
+
+	url(r'^leagueSelection/(?P<string>[\w\-]+)$', views.leagues_info, name="leagueselectedLeague"),
+    url(r'^leagueSelection', views.league, name="leagueSelection"),
 	]
