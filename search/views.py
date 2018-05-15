@@ -212,32 +212,31 @@ def process_query(request):
             return render(request, 'search/search_results_team.html', context)
 
         elif display_type == "match":
-            city = request.GET["team-cityInput"]
-            league = request.GET["team-leagueInput"]
-            stadium = request.GET["team-stadiumNameInput"]
-            budget = request.GET["team-budgetInput"]
+            league = request.GET["matchLeagueInput"]
+            other_team = request.GET["match-otherTeamNameInput"]
 
-            sqlQuery = "SELECT match_id, home_team, guest_team, home_score, guest_score, team.league " \
-                       "FROM matches, team WHERE home_team.team_name LIKE '" + name + "%%' OR guest_team.team_name LIKE '" + name + "%%'"
+            sqlQuery = "SELECT DISTINCT match_id, home_team, guest_team, home_score, guest_score FROM matches, team "
+
+            if other_team == "":
+                sqlQuery += "WHERE home_team LIKE '" + name + "%%' OR guest_team LIKE '" + name + "%%'"
+            if other_team != "":
+                sqlQuery += "WHERE ( home_team LIKE '" + name + "%%' AND guest_team LIKE '" + other_team + "%%' ) "\
+                            "OR ( home_team LIKE '" + other_team + "%%' AND guest_team LIKE '" + name + "%%' )"
 
             if league != "":
-                sqlQuery += " AND team.league = LIKE '" + league + "%%'"
-            if stadium != "":
-                sqlQuery += " AND team.stadium_name = LIKE '%%" + stadium + "%%'"
-            if budget != "":
-                sqlQuery += " AND team.budget > " + budget
-            if city != "":
-                sqlQuery += " AND president.city = LIKE '%%" + stadium + "%%'"
+                sqlQuery += " AND ( team.team_name = matches.home_team AND team.league LIKE '" + league + "%%')"
 
+            sqlQuery += ";"
             cursor.execute(sqlQuery)
             columns = [col[0] for col in cursor.description]
-            team = [dict(zip(columns, row)) for row in cursor.fetchall()]
+            match = [dict(zip(columns, row)) for row in cursor.fetchall()]
             context = {
                 'title': 'Search Results',
                 'match': match,
             }
-
             return render(request, 'search/search_results_match.html', context)
+
+
 
 
     else:
